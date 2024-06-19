@@ -1,7 +1,7 @@
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector('#main'),
-//     smooth: true
-// });
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
 // loading animation
 function loader() {
     function showContent() {
@@ -11,7 +11,7 @@ function loader() {
 
 
     window.addEventListener('load', function () {
-        setTimeout(showContent,0);
+        setTimeout(showContent, 4800);
     });
 
     let loadertl = gsap.timeline()
@@ -56,41 +56,42 @@ function loader() {
 loader()
 
 // home page animation
-// function animatehomepage() {
-//     let hometl = gsap.timeline()
-//     hometl.from(".logo", {
-//         y: -100,
-//         duration: 0.5,
-//         opacity: 0,
-//     })
-//     hometl.from(".links li", {
-//         y: -40,
-//         stagger: 0.1,
-//         opacity: 0,
-//         duration: 0.4,
-//     })
-//     hometl.from('.left-home h1 span', {
-//         y: 50,
-//         duration: 0.6,
-//         stagger: 0.1,
-//         opacity: 0,
-//     })
-//     hometl.from('.left-home p', {
-//         y: 50,
-//         duration: 0.4,
-//         opacity: 0,
-//     })
-//     hometl.from('.right-home', {
-//         x: 500,
-//         duration: 0.6,
-//         opacity: 0,
-//     })
-//     hometl.from('.btn', {
-//         x: -50,
-//         duration: 0.4,
-//         opacity: 0,
-//     })
-// }
+function animatehomepage() {
+    let hometl = gsap.timeline()
+    hometl.from(".logo", {
+        y: -100,
+        duration: 0.5,
+        opacity: 0,
+    })
+    hometl.from(".links li", {
+        y: -40,
+        stagger: 0.1,
+        opacity: 0,
+        duration: 0.4,
+    })
+    hometl.from('.left-home h1 span', {
+        y: 50,
+        duration: 0.6,
+        stagger: 0.1,
+        opacity: 0,
+    })
+    hometl.from('.left-home p', {
+        y: 50,
+        duration: 0.4,
+        opacity: 0,
+    })
+    hometl.from('.right-home', {
+        rotate: '-30deg',
+        x: 300,
+        duration: 0.6,
+        opacity: 0,
+    })
+    hometl.from('.btn', {
+        x: -50,
+        duration: 0.4,
+        opacity: 0,
+    })
+}
 // Navbar Dropdown
 function dropdown() {
     let droptl = gsap.timeline()
