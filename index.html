@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiggle Hot Chocolate - Tiggle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+
+<body>
+    <!-- loading animation -->
+    <div class="loader" id="loader">
+        <div class="text-loader">
+            <h1> <span>Pouring</span> <span>love</span> <span> into </span> <span>your </span>
+                <span>Tiggle...</span><span>❤️</span><span>🍫</span>
+            </h1>
+        </div>
+        <div class="bg-loader"></div>
+    </div>
+    <!-- cursor -->
+    <!-- <div class="cursor-follower"></div> -->
+    <!-- main-content -->
+    <section id="main">
+        <section class="home" id="home">
+            <div class="navbar">
+                <nav>
+                    <div class="logo"><a href="">
+                            <li><img src="assets/logo.png" alt=""></li>
+                        </a></div>
+                    <ul class="links">
+                        <svg id="nav-close" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.5304 5.53033C19.8232 5.23744 19.8232 4.76256 19.5304 4.46967C19.2375 4.17678 18.7626 4.17678 18.4697 4.46967L12 10.9394L5.53033 4.46967C5.23744 4.17678 4.76256 4.17678 4.46967 4.46967C4.17678 4.76257 4.17678 5.23744 4.46967 5.53033L10.9394 12L4.4697 18.4697C4.1768 18.7626 4.1768 19.2374 4.4697 19.5303C4.76259 19.8232 5.23746 19.8232 5.53036 19.5303L12 13.0607L18.4697 19.5303C18.7626 19.8232 19.2374 19.8232 19.5303 19.5303C19.8232 19.2374 19.8232 18.7626 19.5303 18.4697L13.0607 12L19.5304 5.53033Z"
+                                fill="white" />
+                        </svg>
+                        <a href="">
+                            <li>Home</li>
+                        </a>
+                        <a href="">
+                            <li id="dropdown-navigation">Shop <svg id="dropdown-btn" width="15" height="15"
+                                    viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.72949 10.0052L12.9523 16.228L19.1751 10.0052" stroke="black"
+                                        stroke-width="2" />
+                                </svg>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>About</li>
+                        </a>
+                        <a href="">
+                            <li><svg id="nav-bag" width="27" height="20" viewBox="0 0 27 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.3784 12.9016V7.72135M7.8317 12.9016V7.72135M7.8317 7.72135V6.28961C7.8317 3.36824 10.1927 1 13.1051 1C16.0175 1 18.3784 3.36824 18.3784 6.28961V7.72135M7.8317 7.72135C8.86886 7.61201 10.1905 7.61201 12.0345 7.61201H14.1757C16.0196 7.61201 17.3413 7.61201 18.3784 7.72135M7.8317 7.72135C7.03799 7.80503 6.4109 7.95274 5.84385 8.21349C4.69123 8.7435 3.71547 9.59572 3.03354 10.668C2.25968 11.8848 2.03578 13.5018 1.58799 16.7359C1.01296 20.8888 0.725449 22.9653 1.35763 24.578C1.91262 25.9938 2.93736 27.1743 4.25904 27.9205C5.76456 28.7705 7.85452 28.7705 12.0345 28.7705H14.1757C18.3556 28.7705 20.4456 28.7705 21.9511 27.9205C23.2728 27.1743 24.2975 25.9938 24.8525 24.578C25.4847 22.9653 25.1972 20.8888 24.6222 16.7359C24.1744 13.5018 23.9505 11.8848 23.1766 10.668C22.4947 9.59572 21.5189 8.7435 20.3663 8.21349C19.7992 7.95274 19.1722 7.80503 18.3784 7.72135"
+                                         stroke-width="2" stroke-linecap="round" />
+                                </svg></li>
+                        </a>
+                    </ul>
+                    <svg id="nav-open" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 5.25C8.58579 5.25 8.25 5.58579 8.25 6C8.25 6.41421 8.58579 6.75 9 6.75H15C15.4142 6.75 15.75 6.41421 15.75 6C15.75 5.58579 15.4142 5.25 15 5.25H9Z"
+                                fill="#232323" />
+                            <path
+                                d="M5 11.25C4.58579 11.25 4.25 11.5858 4.25 12C4.25 12.4142 4.58579 12.75 5 12.75H19C19.4142 12.75 19.75 12.4142 19.75 12C19.75 11.5858 19.4142 11.25 19 11.25H5Z"
+                                fill="#232323" />
+                            <path
+                                d="M9 17.25C8.58579 17.25 8.25 17.5858 8.25 18C8.25 18.4142 8.58579 18.75 9 18.75H15C15.4142 18.75 15.75 18.4142 15.75 18C15.75 17.5858 15.4142 17.25 15 17.25H9Z"
+                                fill="#232323" />
+                        </svg>
+
+                </nav>
+                <div class="dropdown">
+                    <div class="menu-content">
+                        <ul class="menu-row">
+                            <li id="menu-heading">Best Seller🔥</li>
+                            <li>Dark Hot Chocolate</li>
+                            <li>Moody Weather Bundle</li>
+                            <li>Iced Chocolate</li>
+                        </ul>
+                        <ul class="menu-row">
+                            <li id="menu-heading">Hot Chocolate🍫</li>
+                            <li>Dark Hot Chocolate</li>
+                            <li>Jaggery Hot Chocolate Mix</li>
+                            <li>Hazelnut Hot Chocolate Mix</li>
+                            <li>Light Hot Chocolate Mix</li>
+                            <li>Coffe-Infused Hot Chocolate</li>
+                            <li>Assorted Hot Chocolate Box</li>
+                        </ul>
+                        <ul class="menu-row">
+                            <li id="menu-heading">Iced Chocolate❄️</li>
+                            <li>55% Dark Iced Chocolate</li>
+                            <li id="menu-heading">Marshmallows🍭</li>
+                            <li>Vegan Marshmallows</li>
+                            <li id="menu-heading">New Arrival⚡</li>
+                            <li>Chocolate Ice Cream</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- home-content -->
+            <div class="home-content">
+                <div class="left-home">
+                    <h1><span>Because</span> <span style="color: #F15A29;"> Adulting </span> <br> <span> Deserves
+                        </span> <span> a </span> <span>Time- </span> <br> <span>Out</span> <span> Too!</span></h1>
+                    <p>Tiggle Hot Chocolate Mix offers a rich aroma, perfect <br> consistency, and a delicious
+                        chocolatey flavor.</p>
+                    <button class="btn"> Order Now</button>
+                </div>
+                <div class="right-home">
+                    <img src="assets/coffee-cup.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-1">
+            <h1>What Makes Tiggle <span style="color: #F15A29;">Special</span>?</h1>
+            <p>Tiggle Hot Chocolate is crafted with love, using India's best cocoa sourced from a small farm and
+                produced by skilled women in our joyful team. The result? A delicious drink made with happy energy that
+                everyone loves! 🔥❤️</p>
+            <button class="btn"> Know More</button>
+        </section>
+
+        <section class="sec-2">
+            <div class="heading-slider">
+                <div class="marquee">
+                    <h1>Highlights</h1>
+                </div>
+                <div class="marquee">
+                    <h1>Highlights</h1>
+                </div>
+                <div class="marquee">
+                    <h1>Highlights</h1>
+                </div>
+                <div class="marquee">
+                    <h1>Highlights</h1>
+                </div>
+                <div class="marquee">
+                    <h1>Highlights</h1>
+                </div>
+                <div class="marquee">
+                    <h1>Highlights</h1>
+                </div>
+                <div class="marquee">
+                    <h1>Highlights</h1>
+                </div>
+                <div class="marquee">
+                    <h1>Highlights</h1>
+                </div>
+                <div class="marquee">
+                    <h1>Highlights</h1>
+                </div>
+                <div class="marquee">
+                    <h1>Highlights</h1>
+                </div>
+            </div>
+
+            <div class="highlight-container one-container">
+                <div class="highlight one-high">
+                    <div class="image-highlights"><img src="assets/sec-1-highlight.png" alt=""></div>
+                    <div class="highlight-content">
+                        <h1>Farm- <br>Based</h1>
+                        <p>Made of cocoa rooted in farms of Tamil Nadu.</p>
+                    </div>
+                </div>
+
+                <div class="highlight two-high" style="background-color: #EFEFEF;">
+                    <div class="image-highlights"><img src="assets/sec-2-highlight.png" alt=""></div>
+                    <div class="highlight-content" style="color: #35495E;">
+                        <h1>Balanced</h1>
+                        <p>not overly sweet or bitter, It is perfectly balanced.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-container two-container">
+                <div class="highlight three-high" style="background-color: #EB423F;">
+                    <div class="image-highlights"><img src="assets/sec-3-highlight.png" alt=""></div>
+                    <div class="highlight-content" style="color: #fff;">
+                        <h1>Chocolatey</h1>
+                        <p>not an ordinary mass produced hot chocolate.</p>
+                    </div>
+                </div>
+
+                <div class="highlight four-high" style="background-color: #FFF6DD;">
+                    <div class="image-highlights"><img src="assets/sec-4-highlight.png" alt=""></div>
+                    <div class="highlight-content" style="color: #D6751F;">
+                        <h1>Easy-To- <br> Make</h1>
+                        <p>Made of cocoa rooted in farms of Tamil Nadu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-3">
+            <h1 id="heading">About Our <span style="color: #F15A29;"> Best Seller </span></h1>
+            <div class="sec-3-container">
+                <div class="left-sec-3"><img src="assets/about-best-seller.png" alt="">
+                    <img src="assets/sticker.png" class="sticker" alt="">
+                </div>
+                <div class="right-sec-3">
+                    <h1>Tiggle Hot Chocolate Mix🍫</h1><br>
+                    <p>Tiggle Hot Chocolate Mix offers a rich aroma, perfect consistency, and a delicious chocolatey
+                        flavor.
+                        Made in small batches from top-grade cocoa, it caters to both intense and mildly flavored
+                        preferences. Ready in just 3 minutes. 🔥🥰</p><br>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="sec-4">
+            <div id="heading">
+                <h1>Our Best Sellers🔥</h1>
+            </div>
+            <div class="product-container">
+                <div class="product">
+                    <svg width="75" height="70" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25.4153" r="25" fill="none" stroke="white"/>
+                        <path d="M26.1429 20.0816C26.1429 19.7898 25.855 19.5532 25.5 19.5532C25.145 19.5532 24.8571 19.7898 24.8571 20.0816L24.8571 25.1897H18.6429C18.2878 25.1897 18 25.4263 18 25.7181C18 26.0099 18.2878 26.2465 18.6429 26.2465H24.8571V31.3546C24.8571 31.6464 25.145 31.883 25.5 31.883C25.855 31.883 26.1429 31.6464 26.1429 31.3546V26.2465H32.3571C32.7122 26.2465 33 26.0099 33 25.7181C33 25.4263 32.7122 25.1897 32.3571 25.1897H26.1429L26.1429 20.0816Z" fill="#FAFAFA"/>
+                        </svg>
+                    <img src="assets/p1f.png" alt="" class="front">
+                    <img src="assets/p1b.png" alt="" class="back">
+                    <div class="content">
+                        <h2>Dark Hot Chocolate Mix</h2>
+                        <h2>₹399</h2>
+                    </div>
+                        
+                </div>
+                <div class="product">
+                    <svg width="75" height="70" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25.4153" r="25" fill="none" stroke="white"/>
+                        <path d="M26.1429 20.0816C26.1429 19.7898 25.855 19.5532 25.5 19.5532C25.145 19.5532 24.8571 19.7898 24.8571 20.0816L24.8571 25.1897H18.6429C18.2878 25.1897 18 25.4263 18 25.7181C18 26.0099 18.2878 26.2465 18.6429 26.2465H24.8571V31.3546C24.8571 31.6464 25.145 31.883 25.5 31.883C25.855 31.883 26.1429 31.6464 26.1429 31.3546V26.2465H32.3571C32.7122 26.2465 33 26.0099 33 25.7181C33 25.4263 32.7122 25.1897 32.3571 25.1897H26.1429L26.1429 20.0816Z" fill="#FAFAFA"/>
+                        </svg>
+                    <img src="assets/p2f.png" alt="" class="front">
+                    <img src="assets/p2b.png" alt="" class="back">
+                    <div class="content" style="background-color: #de5135a8;">
+                        <h2>Dark Iced Chocolate</h2>
+                        <h2>₹399</h2>
+                    </div>
+                        
+                </div>
+                <div class="product">
+                    <svg width="75" height="70" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25.4153" r="25" fill="none" stroke="white"/>
+                        <path d="M26.1429 20.0816C26.1429 19.7898 25.855 19.5532 25.5 19.5532C25.145 19.5532 24.8571 19.7898 24.8571 20.0816L24.8571 25.1897H18.6429C18.2878 25.1897 18 25.4263 18 25.7181C18 26.0099 18.2878 26.2465 18.6429 26.2465H24.8571V31.3546C24.8571 31.6464 25.145 31.883 25.5 31.883C25.855 31.883 26.1429 31.6464 26.1429 31.3546V26.2465H32.3571C32.7122 26.2465 33 26.0099 33 25.7181C33 25.4263 32.7122 25.1897 32.3571 25.1897H26.1429L26.1429 20.0816Z" fill="#FAFAFA"/>
+                        </svg>
+                    <img src="assets/p3f.png" alt="" class="front">
+                    <img src="assets/p3b.png" alt="" class="back">
+                    <div class="content" style="background-color: #7fa8bade;">
+                        <h2>Dark Iced Chocolate</h2>
+                        <h2>₹399</h2>
+                    </div>
+                        
+                </div>
+            </div>
+        </section>
+
+
+    </section>
+
+    <!-- locmotive -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- gsap scroll trigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
