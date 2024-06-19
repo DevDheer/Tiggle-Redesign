@@ -78,11 +78,11 @@
 }
 @media (max-width: 1051px){
     .left-home h1{
-        font-size: 3.8rem;
-        line-height: 3.5rem;
+        font-size: 6vw;
+        line-height: 5.5vw;
     }
     .left-home p{
-        font-size: 0.8rem;
+        font-size: 1.3vw;
     }
     .btn{
         font-size: 1.3vw;
@@ -101,28 +101,70 @@
     }
 }
 
-@media (max-width: 851px){
+@media (max-width: 751px){
+    .home-content{
+        height: 60vh;
+    }
     .left-home h1{
-        font-size: 3.1rem;
-        line-height: 2.8rem;
+        font-size: 7vw;
+        line-height: 6vw;
     }
     .left-home p{
-        font-size: 0.8rem;
+        font-size: 1.4vw;
     }
     .btn{
+        border: 1px solid;
         font-size: 1.3vw;
+        width: 12.5vw;
+        height: 5vw;
         font-weight: 500;
-        border: 1px solid;  
     }
     .left-home{
         width: 65%;
     }
     .right-home{
-        top: 20%;
+        top: 10%;
         width: 35%;
-        right: 2%;
     }
     .right-home img{
-        height: 55vw;
+        height: 50vw;
+    }
+}
+
+@media (max-width: 601px) {
+    .left-home h1{
+        font-size: 2.6rem;
+        line-height: 2.3rem;
+    }
+    .left-home p{
+        font-size: 0.6rem;
+    }
+    .left-home button{
+        border: 1px solid;
+        font-size: 0.6rem;
+        width: 5rem;
+        height: 2rem;
+        font-weight: 500;
+    }
+    .right-home img{
+        height: 20rem;
+    }
+    .home-content{
+        top: -10%;
+        align-items: center;
+        flex-direction: column;
+        height: 90vh;
+    }
+    .left-home{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .right-home{
+        top: -7%;
+        width: 45%;
+    }
+    nav{
+        padding: 2.5rem 1.5rem;
     }
 }

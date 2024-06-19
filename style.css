@@ -242,6 +242,7 @@ nav {
 }
 
 .left-home {
+    position: relative;
     width:60%;
     height: 100%;
     padding: 2vw;
@@ -278,13 +279,13 @@ nav {
     margin-top: 1vw;
     position: relative;
     overflow: hidden;
-    border: 2px solid #513026;
+    border: 1px solid #513026;
     transition: color .5s;
     padding: 1vw 1.5vw;
     z-index: 1;
     font-size: 1.2vw;
     border-radius: 1vw;
-    font-weight: 600;
+    font-weight: 500;
     color: #513026;
     display: flex;
     align-items: center;
@@ -317,6 +318,7 @@ nav {
 }
 
 .right-home {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     width: 40%;
