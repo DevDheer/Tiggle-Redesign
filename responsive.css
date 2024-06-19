@@ -78,19 +78,51 @@
 }
 @media (max-width: 1051px){
     .left-home h1{
-        font-size: 6vw;
-        line-height: 5.5vw;
+        font-size: 3.8rem;
+        line-height: 3.5rem;
     }
     .left-home p{
-        font-size: 1.3vw;
+        font-size: 0.8rem;
     }
     .btn{
         font-size: 1.3vw;
         width: 12.5vw;
         height: 5vw;
     }
+    .left-home{
+        width: 65%;
+    }
     .right-home{
+        top: 10%;
         width: 35%;
-        right: -10%;
+    }
+    .right-home img{
+        height: 50vw;
+    }
+}
+
+@media (max-width: 851px){
+    .left-home h1{
+        font-size: 3.1rem;
+        line-height: 2.8rem;
+    }
+    .left-home p{
+        font-size: 0.8rem;
+    }
+    .btn{
+        font-size: 1.3vw;
+        font-weight: 500;
+        border: 1px solid;  
+    }
+    .left-home{
+        width: 65%;
+    }
+    .right-home{
+        top: 20%;
+        width: 35%;
+        right: 2%;
+    }
+    .right-home img{
+        height: 55vw;
     }
 }
