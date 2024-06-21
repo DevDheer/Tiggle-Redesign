@@ -25,15 +25,16 @@
         <div class="bg-loader"></div>
     </div>
     <!-- cursor -->
-    <div class="cursor-follower"></div>
+    <!-- <div class="cursor-follower"></div> -->
     <!-- main-content -->
     <section id="main">
         <section class="home" id="home">
             <div class="navbar">
                 <nav>
-                    <div class="logo"><a href="">
+                    <div class="logo"><a href="#">
                             <li><img src="assets/logo.png" alt=""></li>
                         </a></div>
+                    <span class="nav-partition"></span>
                     <ul class="links">
                         <svg id="nav-close" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +48,7 @@
                         <a href="">
                             <li id="dropdown-navigation">Shop <svg id="dropdown-btn" width="15" height="15"
                                     viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.72949 10.0052L12.9523 16.228L19.1751 10.0052" stroke="black"
+                                    <path d="M6.72949 10.0052L12.9523 16.228L19.1751 10.0052" stroke="#2A2A2A"
                                         stroke-width="2" />
                                 </svg>
                             </li>
@@ -55,27 +56,28 @@
                         <a href="">
                             <li>About</li>
                         </a>
-                        <a href="">
-                            <li><svg id="nav-bag" width="27" height="20" viewBox="0 0 27 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M18.3784 12.9016V7.72135M7.8317 12.9016V7.72135M7.8317 7.72135V6.28961C7.8317 3.36824 10.1927 1 13.1051 1C16.0175 1 18.3784 3.36824 18.3784 6.28961V7.72135M7.8317 7.72135C8.86886 7.61201 10.1905 7.61201 12.0345 7.61201H14.1757C16.0196 7.61201 17.3413 7.61201 18.3784 7.72135M7.8317 7.72135C7.03799 7.80503 6.4109 7.95274 5.84385 8.21349C4.69123 8.7435 3.71547 9.59572 3.03354 10.668C2.25968 11.8848 2.03578 13.5018 1.58799 16.7359C1.01296 20.8888 0.725449 22.9653 1.35763 24.578C1.91262 25.9938 2.93736 27.1743 4.25904 27.9205C5.76456 28.7705 7.85452 28.7705 12.0345 28.7705H14.1757C18.3556 28.7705 20.4456 28.7705 21.9511 27.9205C23.2728 27.1743 24.2975 25.9938 24.8525 24.578C25.4847 22.9653 25.1972 20.8888 24.6222 16.7359C24.1744 13.5018 23.9505 11.8848 23.1766 10.668C22.4947 9.59572 21.5189 8.7435 20.3663 8.21349C19.7992 7.95274 19.1722 7.80503 18.3784 7.72135"
-                                         stroke-width="2" stroke-linecap="round" />
-                                </svg></li>
-                        </a>
+
                     </ul>
+                    <a href="">
+                        <li><svg id="nav-bag" width="27" height="20" viewBox="0 0 27 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.3784 12.9016V7.72135M7.8317 12.9016V7.72135M7.8317 7.72135V6.28961C7.8317 3.36824 10.1927 1 13.1051 1C16.0175 1 18.3784 3.36824 18.3784 6.28961V7.72135M7.8317 7.72135C8.86886 7.61201 10.1905 7.61201 12.0345 7.61201H14.1757C16.0196 7.61201 17.3413 7.61201 18.3784 7.72135M7.8317 7.72135C7.03799 7.80503 6.4109 7.95274 5.84385 8.21349C4.69123 8.7435 3.71547 9.59572 3.03354 10.668C2.25968 11.8848 2.03578 13.5018 1.58799 16.7359C1.01296 20.8888 0.725449 22.9653 1.35763 24.578C1.91262 25.9938 2.93736 27.1743 4.25904 27.9205C5.76456 28.7705 7.85452 28.7705 12.0345 28.7705H14.1757C18.3556 28.7705 20.4456 28.7705 21.9511 27.9205C23.2728 27.1743 24.2975 25.9938 24.8525 24.578C25.4847 22.9653 25.1972 20.8888 24.6222 16.7359C24.1744 13.5018 23.9505 11.8848 23.1766 10.668C22.4947 9.59572 21.5189 8.7435 20.3663 8.21349C19.7992 7.95274 19.1722 7.80503 18.3784 7.72135"
+                                    stroke-width="2" stroke-linecap="round" />
+                            </svg></li>
+                    </a>
                     <svg id="nav-open" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M9 5.25C8.58579 5.25 8.25 5.58579 8.25 6C8.25 6.41421 8.58579 6.75 9 6.75H15C15.4142 6.75 15.75 6.41421 15.75 6C15.75 5.58579 15.4142 5.25 15 5.25H9Z"
-                                fill="#232323" />
-                            <path
-                                d="M5 11.25C4.58579 11.25 4.25 11.5858 4.25 12C4.25 12.4142 4.58579 12.75 5 12.75H19C19.4142 12.75 19.75 12.4142 19.75 12C19.75 11.5858 19.4142 11.25 19 11.25H5Z"
-                                fill="#232323" />
-                            <path
-                                d="M9 17.25C8.58579 17.25 8.25 17.5858 8.25 18C8.25 18.4142 8.58579 18.75 9 18.75H15C15.4142 18.75 15.75 18.4142 15.75 18C15.75 17.5858 15.4142 17.25 15 17.25H9Z"
-                                fill="#232323" />
-                        </svg>
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9 5.25C8.58579 5.25 8.25 5.58579 8.25 6C8.25 6.41421 8.58579 6.75 9 6.75H15C15.4142 6.75 15.75 6.41421 15.75 6C15.75 5.58579 15.4142 5.25 15 5.25H9Z"
+                            fill="#232323" />
+                        <path
+                            d="M5 11.25C4.58579 11.25 4.25 11.5858 4.25 12C4.25 12.4142 4.58579 12.75 5 12.75H19C19.4142 12.75 19.75 12.4142 19.75 12C19.75 11.5858 19.4142 11.25 19 11.25H5Z"
+                            fill="#232323" />
+                        <path
+                            d="M9 17.25C8.58579 17.25 8.25 17.5858 8.25 18C8.25 18.4142 8.58579 18.75 9 18.75H15C15.4142 18.75 15.75 18.4142 15.75 18C15.75 17.5858 15.4142 17.25 15 17.25H9Z"
+                            fill="#232323" />
+                    </svg>
 
                 </nav>
                 <div class="dropdown">
@@ -109,16 +111,20 @@
             <!-- home-content -->
             <div class="home-content">
                 <div class="left-home">
-                    <h1><span>Because</span> <span style="color: #F15A29;"> Adulting </span> <br> <span> Deserves
-                        </span> <span> a </span> <span>Time- </span> <br> <span>Out</span> <span> Too!</span></h1>
-                    <p>Tiggle Hot Chocolate Mix offers a rich aroma, perfect <br> consistency, and a delicious
-                        chocolatey flavor.</p>
+                    <h1><span style="color: #F15A29;"> Tiggle </span> <span class="home-img-text"><img
+                                src="assets/home-img-text.png" alt=""></span> <br> <span> Where
+                        </span> <span> Every </span> <span>Sip </span> <span>Is</span> <br> <span> Pure</span>
+                        <span style="color: #F15A29;">Magic 🪄</span>
+                    </h1>
                     <button class="btn"> Order Now</button>
                 </div>
+                
                 <div class="right-home">
-                    <img src="assets/coffee-cup.png" alt="">
+                    <img src="assets/home-img.png" class="home-img" alt="">
                 </div>
             </div>
+            
+            <img src="assets/home-cocoa-beans.png" class="home-beans" alt="">
         </section>
 
         <section class="sec-1">
@@ -204,7 +210,6 @@
             <h1 id="heading">About Our <span style="color: #F15A29;"> Best Seller </span></h1>
             <div class="sec-3-container">
                 <div class="left-sec-3"><img src="assets/about-best-seller.png" alt="">
-                    <img src="assets/sticker.png" class="sticker" alt="">
                 </div>
                 <div class="right-sec-3">
                     <h1>Tiggle Hot Chocolate Mix🍫</h1><br>
@@ -217,6 +222,7 @@
             </div>
         </section>
         <hr>
+
         <section class="sec-4">
             <div id="heading">
                 <h1>Our <span style="color: #F15A29;">Best </span>Sellers🔥</h1>
@@ -224,35 +230,41 @@
             <div class="product-container">
                 <div class="product">
                     <svg width="75" height="70" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="25" cy="25.4153" r="25" fill="none" stroke="white"/>
-                        <path d="M26.1429 20.0816C26.1429 19.7898 25.855 19.5532 25.5 19.5532C25.145 19.5532 24.8571 19.7898 24.8571 20.0816L24.8571 25.1897H18.6429C18.2878 25.1897 18 25.4263 18 25.7181C18 26.0099 18.2878 26.2465 18.6429 26.2465H24.8571V31.3546C24.8571 31.6464 25.145 31.883 25.5 31.883C25.855 31.883 26.1429 31.6464 26.1429 31.3546V26.2465H32.3571C32.7122 26.2465 33 26.0099 33 25.7181C33 25.4263 32.7122 25.1897 32.3571 25.1897H26.1429L26.1429 20.0816Z" fill="#FAFAFA"/>
-                        </svg>
+                        <circle cx="25" cy="25.4153" r="25" fill="none" stroke="white" />
+                        <path
+                            d="M26.1429 20.0816C26.1429 19.7898 25.855 19.5532 25.5 19.5532C25.145 19.5532 24.8571 19.7898 24.8571 20.0816L24.8571 25.1897H18.6429C18.2878 25.1897 18 25.4263 18 25.7181C18 26.0099 18.2878 26.2465 18.6429 26.2465H24.8571V31.3546C24.8571 31.6464 25.145 31.883 25.5 31.883C25.855 31.883 26.1429 31.6464 26.1429 31.3546V26.2465H32.3571C32.7122 26.2465 33 26.0099 33 25.7181C33 25.4263 32.7122 25.1897 32.3571 25.1897H26.1429L26.1429 20.0816Z"
+                            fill="#FAFAFA" />
+                    </svg>
                     <img src="assets/p1f.png" alt="" class="front">
                     <img src="assets/p1b.png" alt="" class="back">
                     <div class="content">
                         <p>Dark Hot Chocolate Mix</p>
                         <p>₹399</p>
                     </div>
-                        
+
                 </div>
                 <div class="product">
                     <svg width="75" height="70" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="25" cy="25.4153" r="25" fill="none" stroke="white"/>
-                        <path d="M26.1429 20.0816C26.1429 19.7898 25.855 19.5532 25.5 19.5532C25.145 19.5532 24.8571 19.7898 24.8571 20.0816L24.8571 25.1897H18.6429C18.2878 25.1897 18 25.4263 18 25.7181C18 26.0099 18.2878 26.2465 18.6429 26.2465H24.8571V31.3546C24.8571 31.6464 25.145 31.883 25.5 31.883C25.855 31.883 26.1429 31.6464 26.1429 31.3546V26.2465H32.3571C32.7122 26.2465 33 26.0099 33 25.7181C33 25.4263 32.7122 25.1897 32.3571 25.1897H26.1429L26.1429 20.0816Z" fill="#FAFAFA"/>
-                        </svg>
+                        <circle cx="25" cy="25.4153" r="25" fill="none" stroke="white" />
+                        <path
+                            d="M26.1429 20.0816C26.1429 19.7898 25.855 19.5532 25.5 19.5532C25.145 19.5532 24.8571 19.7898 24.8571 20.0816L24.8571 25.1897H18.6429C18.2878 25.1897 18 25.4263 18 25.7181C18 26.0099 18.2878 26.2465 18.6429 26.2465H24.8571V31.3546C24.8571 31.6464 25.145 31.883 25.5 31.883C25.855 31.883 26.1429 31.6464 26.1429 31.3546V26.2465H32.3571C32.7122 26.2465 33 26.0099 33 25.7181C33 25.4263 32.7122 25.1897 32.3571 25.1897H26.1429L26.1429 20.0816Z"
+                            fill="#FAFAFA" />
+                    </svg>
                     <img src="assets/p2f.png" alt="" class="front">
                     <img src="assets/p2b.png" alt="" class="back">
                     <div class="content" style="background-color: #de5135a8;">
                         <p>Dark Iced Chocolate</p>
                         <p>₹399</p>
                     </div>
-                        
+
                 </div>
                 <div class="product">
                     <svg width="75" height="70" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="25" cy="25.4153" r="25" fill="none" stroke="white"/>
-                        <path d="M26.1429 20.0816C26.1429 19.7898 25.855 19.5532 25.5 19.5532C25.145 19.5532 24.8571 19.7898 24.8571 20.0816L24.8571 25.1897H18.6429C18.2878 25.1897 18 25.4263 18 25.7181C18 26.0099 18.2878 26.2465 18.6429 26.2465H24.8571V31.3546C24.8571 31.6464 25.145 31.883 25.5 31.883C25.855 31.883 26.1429 31.6464 26.1429 31.3546V26.2465H32.3571C32.7122 26.2465 33 26.0099 33 25.7181C33 25.4263 32.7122 25.1897 32.3571 25.1897H26.1429L26.1429 20.0816Z" fill="#FAFAFA"/>
-                        </svg>
+                        <circle cx="25" cy="25.4153" r="25" fill="none" stroke="white" />
+                        <path
+                            d="M26.1429 20.0816C26.1429 19.7898 25.855 19.5532 25.5 19.5532C25.145 19.5532 24.8571 19.7898 24.8571 20.0816L24.8571 25.1897H18.6429C18.2878 25.1897 18 25.4263 18 25.7181C18 26.0099 18.2878 26.2465 18.6429 26.2465H24.8571V31.3546C24.8571 31.6464 25.145 31.883 25.5 31.883C25.855 31.883 26.1429 31.6464 26.1429 31.3546V26.2465H32.3571C32.7122 26.2465 33 26.0099 33 25.7181C33 25.4263 32.7122 25.1897 32.3571 25.1897H26.1429L26.1429 20.0816Z"
+                            fill="#FAFAFA" />
+                    </svg>
                     <img src="assets/p3f.png" alt="" class="front">
                     <img src="assets/p3b.png" alt="" class="back">
                     <div class="content" style="background-color: #7fa8bade;">
@@ -261,9 +273,11 @@
                     </div>
                 </div>
                 <svg width="50" height="50" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="33" cy="33" r="33" fill="#D9D9D9" fill-opacity="0.75"/>
-                    <path d="M31.0372 25.623C30.6449 25.2342 30.0118 25.237 29.623 25.6293C29.2342 26.0216 29.237 26.6547 29.6293 27.0435L31.9799 29.3733C32.9339 30.3188 33.5883 30.9695 34.0311 31.5209C34.4613 32.0565 34.6088 32.4005 34.6481 32.7086C34.6727 32.902 34.6727 33.0978 34.6481 33.2913C34.6088 33.5994 34.4613 33.9434 34.0311 34.479C33.5883 35.0303 32.9339 35.6811 31.9799 36.6266L29.6293 38.9563C29.237 39.3451 29.2342 39.9783 29.623 40.3705C30.0118 40.7628 30.6449 40.7656 31.0372 40.3768L33.4302 38.0051C34.3315 37.1119 35.0681 36.3818 35.5905 35.7313C36.1337 35.0549 36.527 34.3683 36.632 33.5441C36.6781 33.1828 36.6781 32.8171 36.632 32.4557C36.527 31.6316 36.1337 30.945 35.5905 30.2685C35.0681 29.618 34.3315 28.888 33.4302 27.9947L31.0372 25.623Z" fill="black"/>
-                    </svg>
+                    <circle cx="33" cy="33" r="33" fill="#D9D9D9" fill-opacity="0.75" />
+                    <path
+                        d="M31.0372 25.623C30.6449 25.2342 30.0118 25.237 29.623 25.6293C29.2342 26.0216 29.237 26.6547 29.6293 27.0435L31.9799 29.3733C32.9339 30.3188 33.5883 30.9695 34.0311 31.5209C34.4613 32.0565 34.6088 32.4005 34.6481 32.7086C34.6727 32.902 34.6727 33.0978 34.6481 33.2913C34.6088 33.5994 34.4613 33.9434 34.0311 34.479C33.5883 35.0303 32.9339 35.6811 31.9799 36.6266L29.6293 38.9563C29.237 39.3451 29.2342 39.9783 29.623 40.3705C30.0118 40.7628 30.6449 40.7656 31.0372 40.3768L33.4302 38.0051C34.3315 37.1119 35.0681 36.3818 35.5905 35.7313C36.1337 35.0549 36.527 34.3683 36.632 33.5441C36.6781 33.1828 36.6781 32.8171 36.632 32.4557C36.527 31.6316 36.1337 30.945 35.5905 30.2685C35.0681 29.618 34.3315 28.888 33.4302 27.9947L31.0372 25.623Z"
+                        fill="black" />
+                </svg>
             </div>
         </section>
         <hr>
@@ -286,50 +300,52 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="footer">
             <div class="footer-container">
-            <div class="footer-links">
-                <ul>
-                <h2>Useful Links</h2>
-                <li>Shop</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
-                <li>Our Story</li>
-                <li>How to Make Hot Chocolate🍫</li>
-                </ul>
-            </div>
-            <div class="services">
-                <ul>
-                <h2>Our Services</h2>
-                <li>Terms Of Service</li>
-                <li>Delivery & Refund Policy</li>
-                <li>Privacy Policy</li>
-                <li>Message on Whatsapp</li>
-                </ul>
-            </div>
-            <div class="followus">
-                <ul>
-                <h2>Stay Connected!</h2>
-                <li>Follow Us On Instagram for latest updates📸✨</li>
-                </ul>
-                <div class="insta">
-                    <a href="https://www.instagram.com/p/C8XG3w9SUT3/"><img src="assets/insta1.png" alt=""></a>
-                    <a href="https://www.instagram.com/p/C7oxtxbSdZt/"><img src="assets/insta2.png" alt=""></a>
-                    <a href="https://www.instagram.com/p/C8Uk3iRyuyn/"><img src="assets/insta3.png" alt=""></a>
+                <div class="footer-links">
+                    <ul>
+                        <h2>Useful Links</h2>
+                        <li>Shop</li>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>Our Story</li>
+                        <li>How to Make Hot Chocolate🍫</li>
+                    </ul>
                 </div>
-                <a href="https://www.instagram.com/thetiggle_/"><li><img src="assets/instalogo.png" alt=""> thetiggle_</li></a>
+                <div class="services">
+                    <ul>
+                        <h2>Our Services</h2>
+                        <li>Terms Of Service</li>
+                        <li>Delivery & Refund Policy</li>
+                        <li>Privacy Policy</li>
+                        <li>Message on Whatsapp</li>
+                    </ul>
+                </div>
+                <div class="followus">
+                    <ul>
+                        <h2>Stay Connected!</h2>
+                        <li>Follow Us On Instagram for latest updates📸✨</li>
+                    </ul>
+                    <div class="insta">
+                        <a href="https://www.instagram.com/p/C8XG3w9SUT3/"><img src="assets/insta1.png" alt=""></a>
+                        <a href="https://www.instagram.com/p/C7oxtxbSdZt/"><img src="assets/insta2.png" alt=""></a>
+                        <a href="https://www.instagram.com/p/C8Uk3iRyuyn/"><img src="assets/insta3.png" alt=""></a>
+                    </div>
+                    <a href="https://www.instagram.com/thetiggle_/">
+                        <li><img src="assets/instalogo.png" alt=""> thetiggle_</li>
+                    </a>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="cpyrght">
-            <div class="left-foot">
-                Tiggle(TM)©️2021
+            <hr>
+            <div class="cpyrght">
+                <div class="left-foot">
+                    Tiggle(TM)©️2021
+                </div>
+                <div class="right-foot">
+                    Made with ❤️ By Dynamic Developers
+                </div>
             </div>
-            <div class="right-foot">
-                Made with ❤️ By Dynamic Developers
-            </div>
-        </div>
         </section>
     </section>
 

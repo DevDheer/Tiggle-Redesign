@@ -11,7 +11,7 @@ function loader() {
 
 
     window.addEventListener('load', function () {
-        setTimeout(showContent, 4800);
+        setTimeout(showContent, 0);
     });
 
     let loadertl = gsap.timeline()
@@ -56,42 +56,48 @@ function loader() {
 loader()
 
 // home page animation
-function animatehomepage() {
-    let hometl = gsap.timeline()
-    hometl.from(".logo", {
-        y: -100,
-        duration: 0.5,
-        opacity: 0,
-    })
-    hometl.from(".links li", {
-        y: -40,
-        stagger: 0.1,
-        opacity: 0,
-        duration: 0.4,
-    })
-    hometl.from('.left-home h1 span', {
-        y: 50,
-        duration: 0.6,
-        stagger: 0.1,
-        opacity: 0,
-    })
-    hometl.from('.left-home p', {
-        y: 50,
-        duration: 0.4,
-        opacity: 0,
-    })
-    hometl.from('.right-home', {
-        rotate: '-30deg',
-        x: 300,
-        duration: 0.6,
-        opacity: 0,
-    })
-    hometl.from('.btn', {
-        x: -50,
-        duration: 0.4,
-        opacity: 0,
-    })
-}
+// function animatehomepage() {
+//     let hometl = gsap.timeline()
+//     hometl.from(".logo", {
+//         y: -100,
+//         duration: 0.5,
+//         opacity: 0,
+//         delay: 1, 
+//     })
+//     hometl.from('.nav-partition', {
+//         opacity:0
+//     })
+//     hometl.from(".links li, #nav-bag", {
+//         y: -40,
+//         stagger: 0.1,
+//         opacity: 0,
+//         duration: 0.4,
+//     })
+//     hometl.from('.left-home h1 span', {
+//         y: 50,
+//         duration: 0.6,
+//         stagger: 0.1,
+//         opacity: 0,
+//         delay: -0.9,
+//     })
+//     hometl.from('.btn', {
+//         x: -50,
+//         duration: 0.4,
+//         opacity: 0,
+//     })
+//     hometl.from('.right-home', {
+//         x: 200,
+//         duration: 0.6,
+//         opacity: 0,
+//         delay: -0.2,
+//     })
+//     hometl.from('.home-beans', {
+//         x: -100,
+//         duration: 0.6,
+//         opacity: 0,
+//         delay: -0.4,
+//     })
+// }
 // Navbar Dropdown
 function dropdown() {
     let droptl = gsap.timeline()
@@ -161,6 +167,27 @@ function navresponsive() {
     })
     navclose.addEventListener('click', () => {
         navcontent.classList.remove('active')
+        if (navcontent.classList.contain('active')) {
+            
+            console.log('there is active class')
+        }
+        else {
+            const navtlclose = gsap.timeline()
+
+            navtlclose.to('.active', {
+                right: '-100vw',
+                duration: 0.8,
+            })
+            navtlclose.to('.active li', {
+                y: 50,
+                opacity: 0,
+                stagger: 0.19,
+                duration: 0.6
+            })
+            navtlclose.to('#nav-close', {
+                opacity: 0
+            })
+        }
     })
 }
 navresponsive()
@@ -261,4 +288,18 @@ window.addEventListener('wheel', function(dets){
             ease:'none'
         })
     }
+})
+
+// gsap scroll trigger
+
+gsap.from('.one-high', {
+    scrollTrigger:{
+        trigger:"h1",
+        start:"top 20%", 
+        end: "top  0%",
+        markers: true,
+    },
+    y:90,
+    duration: 0.8,
+    opacity: 0
 })

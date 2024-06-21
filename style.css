@@ -132,24 +132,40 @@ a {
     flex-direction: column;
 }
 
+.nav-partition {
+    width: 1px;
+    height: 30px;
+    background-color: #9D9D9D;
+}
+
 nav {
-    width: 100%;
+    width: 100vh;
     height: 10vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 2vw;
     padding: 3rem 2rem;
+    z-index: 999;
+}
+
+#nav-bag {
+    position: relative;
+    right: -60vw;
 }
 
 .links {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 4rem;
 }
 
 .links li {
     position: relative;
+    mix-blend-mode: difference;
+}
+
+.links a {
+    color: #2A2A2A;
 }
 
 .links li::before {
@@ -167,6 +183,7 @@ nav {
 .links li:hover:before {
     transform: scaleX(1);
 }
+
 
 #nav-open,
 #nav-close {
@@ -243,8 +260,10 @@ nav {
 
 .left-home {
     position: relative;
-    width:60%;
+    top: -15%;
+    width: 60%;
     height: 100%;
+    left: 2%;
     padding: 2vw;
     display: flex;
     justify-content: center;
@@ -252,6 +271,7 @@ nav {
 }
 
 .left-home h1 {
+    position: relative;
     font-size: 5vw;
     font-family: 'baloo';
     font-weight: 700;
@@ -265,25 +285,25 @@ nav {
     display: inline-block;
 }
 
-.left-home p {
-    color: #62382F;
-    font-size: 1vw;
-    margin-top: 1vw;
+.home-img-text img {
+    position: relative;
+    width: 10vw;
+    top: 1vw;
 }
 
 .btn {
-    width: 12vw;
-    height: 4.5vw;
+    width: 9vw;
+    height: 3.5vw;
     background-color: transparent;
     font-family: inherit;
     margin-top: 1vw;
     position: relative;
     overflow: hidden;
-    border: 1px solid #513026;
+    border: 1px solid #513026;;
     transition: color .5s;
     padding: 1vw 1.5vw;
     z-index: 1;
-    font-size: 1.2vw;
+    font-size: 1vw;
     border-radius: 1vw;
     font-weight: 500;
     color: #513026;
@@ -320,13 +340,31 @@ nav {
 .right-home {
     position: relative;
     display: flex;
-    justify-content: flex-end;
-    width: 40%;
+    align-items: center;
+    top: -7%;
+    gap: 2vw;
+    width: 50%;
     height: 100%;
 }
-/* .right-home img{
-    height: 50vw;
-} */
+
+.home-img {
+    position: relative;
+    height: 42vw;
+    top: -1vw;
+}
+
+img.home-img {
+    border-radius: 20px;
+}
+
+img.home-beans {
+    top: 31vw;
+    left: 0;
+    position: absolute;
+    width: 25%;
+    padding: 1vw 2vw;
+}
+
 /* sec-1 */
 
 .sec-1 {
@@ -334,7 +372,10 @@ nav {
     width: 100%;
     margin-top: 30px;
     height: 30vw;
-    background-color: #FFF6DD;
+    background-image: url(assets/tiggle-special-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 2vw;
     display: flex;
     align-items: center;
@@ -443,6 +484,11 @@ nav {
     transform: translateY(85%);
 }
 
+.one-high,
+.four-high {
+    width: 30vw;
+}
+
 .two-container {
     margin-top: 2vw;
 }
@@ -490,17 +536,11 @@ nav {
     position: relative;
     width: 50%;
     height: 100%;
+    left: 4%;
 }
 
 .left-sec-3 img {
-    width: 90%;
-}
-
-.sticker {
-    bottom: 20%;
-    left: 50%;
-    z-index: -9;
-    position: absolute;
+    width: 70%;
 }
 
 .right-sec-3 {
@@ -554,6 +594,7 @@ hr {
     position: relative;
     padding: 2rem;
 }
+
 .product img {
     position: absolute;
     top: 0;
@@ -600,14 +641,16 @@ hr {
 
 /* section 5 */
 
-.sec-5{
+.sec-5 {
     width: 100%;
     height: 100%;
 }
-.sec-5 #heading{
+
+.sec-5 #heading {
     text-align: center;
 }
-.aso-container{
+
+.aso-container {
     width: 100%;
     display: flex;
     align-items: center;
@@ -616,64 +659,78 @@ hr {
     gap: 5vw;
     padding: 2vw;
 }
-.row-1{
+
+.row-1 {
     display: flex;
     gap: 3vw;
 }
-.row-2{
+
+.row-2 {
     display: flex;
     gap: 5vw;
 }
-.row-1 img{
+
+.row-1 img {
     height: 4vw;
 }
-.row-2 img{
+
+.row-2 img {
     height: 7vw;
 }
 
 
 /* footer */
-.footer{
+.footer {
     width: 100%;
     height: 100%;
     border-top: 1px solid #9E9E9E;
     background-color: #FFF6DD;
     margin-top: 2vw;
 }
-.footer hr{
+
+.footer hr {
     margin-top: 0;
 }
-.footer-container{
+
+.footer-container {
     position: relative;
     width: 100%;
     height: 50vh;
     padding: 2vw;
     display: flex;
 }
-.onen2{
+
+.onen2 {
     width: 50%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
-.footer h2{
+
+.footer h2 {
     color: #232323;
     margin-bottom: 1vw;
 }
-.footer li{
+
+.footer li {
     color: #434343;
     line-height: 2.5vw;
 }
-.followus{
+
+.followus {
     width: 33%;
 }
-.insta img{
-    width:30%;
+
+.insta img {
+    width: 30%;
 }
-.footer-links, .services{
+
+.footer-links,
+.services {
     width: 33%;
 }
-.cpyrght{
+
+.cpyrght {
     width: 100%;
     display: flex;
     align-items: center;
