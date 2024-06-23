@@ -55,14 +55,32 @@ li {
 }
 
 .cursor-follower {
-    position: absolute;
-    width: 40px;
-    height: 40px;
+    position: fixed;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    border: 2px solid #62382F;
+    background-color: #513026;
     z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6vw;
+    color: #fff;
+    opacity: 0;
 }
 
+.cursor-follower p,
+.cursor-follower svg {
+    display: none;
+}
+
+.cursor-follower svg {
+    transform: rotate(-90deg);
+}
+
+/* #main{
+    display: none;
+} */
 /* loading animation */
 .loader {
     width: 100%;
@@ -74,7 +92,6 @@ li {
 }
 
 .text-loader h1 span {
-    position: relative;
     display: inline-block;
     height: 4.55vw;
     font-size: 2.3vw;
@@ -294,19 +311,19 @@ nav {
 .btn {
     width: 9vw;
     height: 3.5vw;
-    background-color: transparent;
+    background-color: #513026;
     font-family: inherit;
-    margin-top: 1vw;
+    margin-top: 2vw;
     position: relative;
     overflow: hidden;
-    border: 1px solid #513026;;
+    border: 1px solid #513026;
     transition: color .5s;
     padding: 1vw 1.5vw;
     z-index: 1;
     font-size: 1vw;
     border-radius: 1vw;
     font-weight: 500;
-    color: #513026;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -316,14 +333,14 @@ nav {
     content: "";
     position: absolute;
     z-index: -1;
-    background: #513026;
+    background: #fff6dd;
     height: 100%;
     width: 100%;
     border-radius: 100%;
 }
 
 .btn:hover {
-    color: #fff;
+    color: #513026;
 }
 
 .btn:before {
@@ -638,15 +655,102 @@ hr {
     transform: scale(1.2);
 }
 
-
-/* section 5 */
-
-.sec-5 {
-    width: 100%;
-    height: 100%;
+/*section 5 */
+.horizontal-container {
+    width: 500%;
+    height: 100vh;
+    display: flex;
 }
 
-.sec-5 #heading {
+.horizon {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #FFF6DD;
+}
+
+img.horizon-img-1 {
+    top: 43%;
+    width: 20%;
+}
+
+img.horizon-img-2 {
+    width: 25%;
+    right: 0;
+}
+
+img.horizon-img-3 {
+    width: 35%;
+    right: -20%;
+    bottom: 0;
+}
+
+img.horizon-img-4 {
+    width: 55%;
+    right: -127%;
+    bottom: 0;
+}
+
+.horizon img {
+    position: absolute;
+    z-index: 9999;
+}
+
+.horizon-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 999;
+}
+
+.horizon h1 {
+    font-size: 3vw;
+    color: #29180E;
+}
+
+.horizon p {
+    font-size: 1.2vw;
+    color: #29180eea;
+}
+
+
+h1.backwardnos {
+    position: absolute;
+    z-index: -9;
+    font-size: 40rem;
+    font-family: 'fuzzy bubbles';
+    color: #35495e65;
+}
+
+#heading-horizon {
+    font-size: 6vw;
+}
+
+#text-horizon {
+    margin-top: 1vw;
+    font-size: 1.5vw;
+}
+
+
+.horizon-img-bottom {
+    right: 1%;
+    bottom: 3%;
+}
+
+/* section 7 */
+
+.sec-7 {
+    width: 100%;
+    height: 100%;
+    margin-top: 20vw;
+}
+
+.sec-7 #heading {
     text-align: center;
 }
 
@@ -736,4 +840,53 @@ hr {
     align-items: center;
     justify-content: space-between;
     padding: 2vw;
+}
+
+.sec-6{
+    width: 100%;
+    height: 100vh;
+}
+
+.story-parent-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+    flex-direction: column;
+}
+.bg-image-sec6{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -999;
+}
+.bg-image-sec6 img{
+    height: 60vw;
+}
+.story-child-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30vw;
+    margin-top: 2vw;
+}
+
+.story{
+    width: 30vw;
+    height: 13vw;
+    background-color: #FFF6DD;
+    box-shadow: 4px 6px 0px #513026;
+    z-index: 99;
+    padding: 2vw;
+    border-radius: 20px;
+    color: #513026;
+}
+.story h2{
+    font-size: 1.5vw;
 }

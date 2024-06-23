@@ -8,24 +8,25 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 </head>
 
 <body>
     <!-- loading animation -->
-    <div class="loader" id="loader">
+    <!-- <div class="loader" id="loader">
         <div class="text-loader">
             <h1> <span>Pouring</span> <span>love</span> <span> into </span> <span>your </span>
                 <span>Tiggle...</span><span>❤️</span><span>🍫</span>
             </h1>
         </div>
         <div class="bg-loader"></div>
-    </div>
+    </div> -->
     <!-- cursor -->
-    <!-- <div class="cursor-follower"></div> -->
+    <div class="cursor-follower">
+        <p>More </p><svg width="13" height="13" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.72949 10.0052L12.9523 16.228L19.1751 10.0052" stroke="white" stroke-width="2" />
+        </svg>
+    </div>
     <!-- main-content -->
     <section id="main">
         <section class="home" id="home">
@@ -118,12 +119,12 @@
                     </h1>
                     <button class="btn"> Order Now</button>
                 </div>
-                
+
                 <div class="right-home">
                     <img src="assets/home-img.png" class="home-img" alt="">
                 </div>
             </div>
-            
+
             <img src="assets/home-cocoa-beans.png" class="home-beans" alt="">
         </section>
 
@@ -272,7 +273,8 @@
                         <p>₹399</p>
                     </div>
                 </div>
-                <svg width="50" height="50" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id="next" width="50" height="50" viewBox="0 0 66 66" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <circle cx="33" cy="33" r="33" fill="#D9D9D9" fill-opacity="0.75" />
                     <path
                         d="M31.0372 25.623C30.6449 25.2342 30.0118 25.237 29.623 25.6293C29.2342 26.0216 29.237 26.6547 29.6293 27.0435L31.9799 29.3733C32.9339 30.3188 33.5883 30.9695 34.0311 31.5209C34.4613 32.0565 34.6088 32.4005 34.6481 32.7086C34.6727 32.902 34.6727 33.0978 34.6481 33.2913C34.6088 33.5994 34.4613 33.9434 34.0311 34.479C33.5883 35.0303 32.9339 35.6811 31.9799 36.6266L29.6293 38.9563C29.237 39.3451 29.2342 39.9783 29.623 40.3705C30.0118 40.7628 30.6449 40.7656 31.0372 40.3768L33.4302 38.0051C34.3315 37.1119 35.0681 36.3818 35.5905 35.7313C36.1337 35.0549 36.527 34.3683 36.632 33.5441C36.6781 33.1828 36.6781 32.8171 36.632 32.4557C36.527 31.6316 36.1337 30.945 35.5905 30.2685C35.0681 29.618 34.3315 28.888 33.4302 27.9947L31.0372 25.623Z"
@@ -280,8 +282,113 @@
                 </svg>
             </div>
         </section>
-        <hr>
+
         <section class="sec-5">
+            <div class="horizontal-container">
+                <div class="horizon one-horizon-scroll">
+                    <img src="assets/horizontal-scroll-1.png" class="horizon-img-1" alt="">
+                    <img src="assets/horizontal-scroll-2.png" class="horizon-img-2" alt="">
+                    <div class="horizon-content">
+                        <h1 style="font-family: 'baloo 2';">How We Craft Delicious Hot Chocolate🍫</h1>
+                        <p>Our secret🫣 ingredient? We add extra happiness and compassion to <br> every step of the
+                            process.</p>
+                        <button class="btn">Shop Now</button>
+                    </div>
+
+                </div>
+                <div class="horizon two-horizon-scroll" style="background-color: #98B3BE;">
+                    <img src="assets/horizontal-scroll-4.png" class="horizon-img-2" alt="">
+                    <div class="horizon-content">
+                        <h1 style="color: #0D3763;" id="heading-horizon">Procuring</h1>
+                        <p style="color: #0D3763;" id="text-horizon">We pick up the best cocoa from our Tamil Nadu farm
+                            and dispatch it to
+                            <br> our manufacturing unit in Agra
+                        </p>
+                        <h1 class="backwardnos">1</h1>
+                    </div>
+                </div>
+                <!-- <img src="assets/horizontal-scroll-3.png" alt="" class="horizon-img-3"> -->
+                <div class="horizon three-horizon-scroll" style="background-color: #D78472;">
+                    <img src="assets/horizontal-scroll-6.png" class="horizon-img-bottom" alt="">
+                    <div class="horizon-content">
+                        <h1 style="color: #792715; z-index: 99999;" id="heading-horizon">Blending</h1>
+                        <p style="color: #792715;" id="text-horizon">Specially trained women at the manufacturing space
+                            blend <br> all the
+                            ingredients with care and pour some extra <br> love into them.</p>
+                        <h1 style="color: #c7573eb4;" class="backwardnos">2</h1>
+                    </div>
+                </div>
+                <!-- <img src="assets/horizontal-scroll-5.png" alt="" class="horizon-img-4"> -->
+                <div class="horizon four-horizon-scroll" style="background-color: #E6C4A1;">
+                    <img src="assets/horizontal-scroll-7.png" class="horizon-img-bottom" style="width: 25%;" alt="">
+                    <div class="horizon-content">
+                        <h1 style="color: #39100A; z-index: 99999;" id="heading-horizon">Packaging</h1>
+                        <p style="color: #39100A;" id="text-horizon">Once the material for every 100 Tiggle packs is
+                            prepared, we put them in
+                            <br>
+                            our standup pouches and store them safely.
+                        </p>
+                        <h1 style="color: #a2482a80;" class="backwardnos">3</h1>
+                    </div>
+                </div>
+                <div class="horizon five-horizon-scroll" style="background-color: #FFE59A;">
+                    <img src="assets/horizontal-scroll-8.png" class="horizon-img-bottom" style="width: 25%;" alt="">
+                    <div class="horizon-content">
+                        <h1 style="color: #813016; z-index: 99999;" id="heading-horizon">Dispatching</h1>
+                        <p style="color: #813016;" id="text-horizon">We carefully pack each order, and use the best
+                            available delivery partner
+                            <br>
+                            to ensure you get your hot chocolate asap!
+                        </p>
+                        <h1 style="color: #FDD35B;" class="backwardnos">4</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-6">
+            <div id="heading">
+                <h1 align="center">Our <span style="color: #F15A29;"> Story </span></h1>
+            </div>
+            <p align="center" id="text">Our journey has evolved from humble beginnings. We survived on a bumper <br> road before
+                making Tiggle available directly to your doorstep. How?</p>
+            <div class="story-parent-container">
+                <div class="bg-image-sec6"><img src="assets/our-story-img.png" alt=""></div>
+                <div class="story-child-container first-container">
+                    <div class="story one-story">
+                        <h2>Farm and Team</h2><br>
+                        <p>No longer a one-man army, we partnered with Tamil Nadu farmers for top-quality cocoa and
+                            skilled
+                            women in Agra to produce fresh Tiggle packets. Our virtual office is filled with awesome
+                            folks.
+                        </p>
+                    </div>
+                    <div class="story two-story">
+                        <h2>On the streets</h2><br>
+                        <p>The journey began with a simple idea and a burning desire to do something unconventional.
+                            Every evening after work, we sold our freshly made hot chocolate outside a metro station in
+                            Delhi. Crazy!
+                        </p>
+                    </div>
+                </div>
+                <div class="story-child-container second-container">
+                    <div class="story three-story">
+                        <h2>30 cups a day</h2><br>
+                        <p>After weeks of street selling, we partnered with kiosks but only sold 30-40 cups daily. Were
+                            we doing something wrong? Then the pandemic shut us down.
+                        </p>
+                    </div>
+                    <div class="story four-story">
+                        <h2>5M+ cups sold</h2><br>
+                        <p>During lockdown, we perfected our product and positioning. Since our launch in early 2021,
+                            Tigglers have shown us immense love. We deliver happiness daily. 🙈
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-7">
             <div id="heading">
                 <h1>As Seen On</h1>
             </div>
@@ -354,9 +461,7 @@
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <!-- gsap scroll trigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
 </body>
 
