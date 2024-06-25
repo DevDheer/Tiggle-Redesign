@@ -303,28 +303,6 @@ function mousefollower() {
 };
 mousefollower();
 
-// sec-2 marquee
-function marqueeheading() {
-    window.addEventListener('wheel', function (dets) {
-        if (dets.deltaY < 0) {
-            gsap.to('.marquee', {
-                transform: 'translateX(-200%)',
-                duration: 2,
-                repeat: -1,
-                ease: 'none'
-            })
-        }
-        else {
-            gsap.to('.marquee', {
-                transform: 'translateX(0%)',
-                duration: 2,
-                repeat: -1,
-                ease: 'none'
-            })
-        }
-    });
-};
-marqueeheading();
 // gsap scroll trigger
 function scrolltrigger() {
 

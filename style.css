@@ -419,25 +419,6 @@ img.home-beans {
     margin-top: 2vw;
 }
 
-.heading-slider {
-    display: flex;
-    padding: 3vw 0;
-    overflow: hidden;
-}
-
-.marquee {
-    display: flex;
-    align-items: center;
-    gap: 1vw;
-    padding: 0 1.5vw;
-    transform: translateX(-100%);
-}
-
-.marquee h1 {
-    font-size: 7vh;
-    font-family: 'baloo';
-    color: #36150B;
-}
 
 /* highlight */
 
@@ -534,6 +515,7 @@ img.home-beans {
 }
 
 #heading {
+    text-align: center;
     margin-top: 2vw;
     font-family: 'baloo';
     font-size: 4vw;
