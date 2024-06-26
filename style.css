@@ -156,7 +156,8 @@ a {
 }
 
 nav {
-    width: 100vh;
+    width: 100%;
+    overflow: hidden;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -165,12 +166,8 @@ nav {
     z-index: 999;
 }
 
-#nav-bag {
-    position: relative;
-    right: -60vw;
-}
-
 .links {
+    width: 100vw;
     display: flex;
     align-items: center;
     gap: 4rem;
@@ -190,7 +187,7 @@ nav {
     position: absolute;
     width: 100%;
     height: 2px;
-    border: 5px;
+    border-radius: 5px;
     background-color: #513026;
     top: 110%;
     transform: scaleX(0);
@@ -261,9 +258,25 @@ nav {
 }
 
 #menu-heading {
+    position: relative;
     font-size: 1.3vw;
     font-weight: 500;
     color: #fff;
+}
+#menu-heading::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 50px;
+    background-color: #fff;
+    top: 80%;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#menu-heading:hover:before {
+    transform: scaleX(1);
 }
 
 /* home-content */
@@ -375,7 +388,7 @@ img.home-img {
 }
 
 img.home-beans {
-    top: 31vw;
+    top: 5%;
     left: 0;
     position: absolute;
     width: 25%;
@@ -639,7 +652,8 @@ hr {
 
 /*section 5 */
 .horizontal-container {
-    width: 500%;
+    width: 100%;
+    white-space: wrap;
     height: 100vh;
     display: flex;
 }
@@ -649,6 +663,12 @@ hr {
     width: 100%;
     height: 100vh;
     background-color: #FFF6DD;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 img.horizon-img-1 {

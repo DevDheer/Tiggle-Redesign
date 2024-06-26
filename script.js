@@ -160,21 +160,7 @@ function navresponsive() {
             console.log('there is active class')
         }
         else {
-            const navtlclose = gsap.timeline()
-
-            navtlclose.to('.active', {
-                right: '-100vw',
-                duration: 0.8,
-            })
-            navtlclose.to('.active li', {
-                y: 50,
-                opacity: 0,
-                stagger: 0.19,
-                duration: 0.6
-            })
-            navtlclose.to('#nav-close', {
-                opacity: 0
-            })
+        //    fsg
         }
     })
 };
@@ -185,6 +171,7 @@ function mousefollower() {
     const content = document.querySelectorAll('.left-home h1, .btn, .home-img, .home-beans')
     const content2 = document.querySelectorAll(".links li")
     const cursor = document.querySelector(".cursor-follower")
+    const dropdown = document.querySelectorAll(".dropdown, #heading")
     const cards = document.querySelectorAll('.highlight, .product, .left-sec-3 img, .sec-7 img')
 
 
@@ -286,6 +273,43 @@ function mousefollower() {
 
     cards.forEach(cardHovering => {
         cardHovering.addEventListener("mouseleave", () => {
+            gsap.to(cursor, {
+                width: "15px",
+                height: "15px",
+                backgroundColor: "#513026",
+                border: "none",
+                duration: 0.2,
+                mixBlendMode: 'normal',
+            });
+            gsap.to('.cursor-follower p, .cursor-follower svg', {
+                display: 'none',
+                delay: -0.9,
+            });
+        });
+    });
+
+
+
+    // dropdown hovering
+
+    dropdown.forEach(dropdownHovering => {
+        dropdownHovering.addEventListener("mouseenter", () => {
+            gsap.to(cursor, {
+                width: "40px",
+                height: "40px",
+                backgroundColor: "#fff6dd",
+                border: "1px solid #513026",
+                duration: 0.2,
+                mixBlendMode: 'difference',
+            });
+            gsap.to('.cursor-follower p, .cursor-follower svg', {
+                display: 'block',
+            });
+        });
+    });;
+
+    dropdown.forEach(dropdownHovering => {
+        dropdownHovering.addEventListener("mouseleave", () => {
             gsap.to(cursor, {
                 width: "15px",
                 height: "15px",
