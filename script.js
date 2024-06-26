@@ -1,48 +1,3 @@
-// loading animation
-// function loader() {
-//     function showContent() {
-//         document.getElementById('loader').style.display = 'none';
-//         document.getElementById('main').style.display = 'block';
-//     }
-
-
-//     window.addEventListener('load', function () {
-//         setTimeout(showContent, 0);
-//     });
-
-//     let loadertl = gsap.timeline()
-//     loadertl.to(".bg-loader", {
-//         bottom: "0%",
-//         height: "100%",
-//         duration: 0.4,
-//         delay: 0.8
-//     })
-
-//     loadertl.from(".text-loader h1 span", {
-//         opacity: 0,
-//         x: 20,
-//         stagger: 0.19,
-//         duration: 0.5
-//     })
-
-//     loadertl.to(".text-loader h1 span", {
-//         opacity: 0,
-//         y: -20,
-//         stagger: 0.1,
-//         duration: 0.2,
-//         delay: 0.3
-//     })
-
-//     loadertl.to(".bg-loader", {
-//         bottom: "100%",
-//         height: "0%",
-//         duration: 0.4,
-//         oncomplete: function () {
-//             animatehomepage();
-//         }
-//     })
-// }
-
 // home page animation
 function animatehomepage() {
     let hometl = gsap.timeline()
@@ -341,9 +296,6 @@ function scrolltrigger() {
     });
 
 
-    ScrollTrigger.refresh();
-
-
     // tiggle special scrolltrigger
     gsap.from(".sec-1 h1, .sec-1 p, .sec-1 .btn", {
         scrollTrigger: {
@@ -448,3 +400,5 @@ function scrolltrigger() {
     });
 };
 scrolltrigger()
+
+ScrollTrigger.refresh();
