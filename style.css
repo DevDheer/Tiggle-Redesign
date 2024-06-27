@@ -1,12 +1,11 @@
 @font-face {
     font-family: bubbles;
-    src: url(fonts/FuzzyBubbles-Bold.ttf);
-    src: url(fonts/FuzzyBubbles-Regular.ttf);
+    src: url(fonts/FuzzyBubbles-Regular.woff2);
 }
 
 @font-face {
     font-family: baloo;
-    src: url(fonts/Baloo2-VariableFont_wght.ttf);
+    src: url(fonts/Baloo2-VariableFont_wght.woff2);
 }
 
 * {
