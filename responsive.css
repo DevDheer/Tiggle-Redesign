@@ -115,3 +115,113 @@
     }
 }
 
+/* home */
+
+@media (max-width: 1001px) {
+    .left-home h1 {
+        font-size: 6vw;
+        line-height: 6vw;
+    }
+
+    .home-img {
+        height: 50vw;
+        top: -1vw;
+        right: 20%;
+    }
+
+    .right-home {
+        width: 37%;
+    }
+
+    img.home-beans {
+        width: 35vw;
+    }
+
+    .btn {
+        width: 11vw;
+        height: 4.5vw;
+        font-size: 1.2vw;
+    }
+    /* special */
+    .sec-1 h1 {
+        font-size: 5vw;
+        font-family: 'baloo';
+        color: #36150B;
+    }
+    
+    .sec-1 p {
+        font-size: 1.1vw;
+        width: 90%;
+    }
+}
+
+@media (max-width: 601px) {
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-home {
+        width: 100%;
+        top: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .left-home h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .home-img-text img {
+        width: 5.5rem;
+    }
+
+    .right-home {
+        width: 35%;
+        top: -5%;
+    }
+    img.home-beans{
+        display: none;
+    }
+    .home-img {
+        height: 20rem;
+        top: -1vw;
+        right: 20%;
+    }
+
+    .btn {
+        width: 5rem;
+        height: 2rem;
+        font-size: 0.6rem;
+        border-radius: 5px;
+    }
+
+    .cursor-follower {
+        display: none;
+    }
+}
+@media (max-width: 419px){
+    .left-home h1{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .home-img-text img {
+        width: 4.5rem;
+    }
+    .right-home{
+        width: 45%;
+    }
+}
+@media (max-width: 346px){
+    .left-home h1{
+        font-size: 1.9rem;
+        line-height: 1.9rem;
+    }
+    .home-img-text img {
+        width: 4rem;
+    }
+    .right-home{
+        width: 65%;
+    }
+}

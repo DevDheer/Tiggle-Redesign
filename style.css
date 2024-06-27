@@ -14,16 +14,17 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* 
+
 body,
 html {
+    width: 100%;
     height: 100%;
-} */
+    overflow-x: hidden;
+}
 
 body {
     font-family: 'bubbles';
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 ::selection {
@@ -237,7 +238,7 @@ nav {
 .left-home {
     position: relative;
     top: -15%;
-    width: 60%;
+    width: 70%;
     height: 100%;
     left: 2%;
     padding: 2vw;
@@ -248,10 +249,10 @@ nav {
 
 .left-home h1 {
     position: relative;
-    font-size: 4rem;
+    font-size: 5vw;
     font-family: 'baloo';
     font-weight: 700;
-    line-height: 4rem;
+    line-height: 5vw;
     color: #36150B;
     overflow: hidden;
 }
@@ -325,19 +326,15 @@ nav {
 
 .home-img {
     position: relative;
-    height: 37rem;
+    height: 40rem;
     top: -1vw;
 }
 
-img.home-img {
-    border-radius: 20px;
-}
-
 img.home-beans {
-    top: 8.5%;
+    top: 65vh;
     left: 0;
     position: absolute;
-    width: 25%;
+    width: 50vh;
     padding: 1vw 2vw;
 }
 
