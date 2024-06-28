@@ -324,7 +324,7 @@ function scrolltrigger() {
     });
 
     //   about best seller scrolltrigger
-    gsap.from(".left-sec-3, .sec-3 #heading, .right-sec-3 h1, .right-sec-3 p, .right-sec-3 .btn", {
+    gsap.from(".left-sec-3, .sec-3 #heading, .right-sec-3 h1, .right-sec-3 p, .right-sec-3 .btn, hr", {
         scrollTrigger: {
             trigger: ".sec-3",
             scrub: 1,

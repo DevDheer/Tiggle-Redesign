@@ -343,7 +343,7 @@ img.home-beans {
     position: relative;
     width: 100%;
     margin-top: 30px;
-    height: 30vw;
+    height: 20rem;
     background-image: url(assets/tiggle-special-bg.png);
     background-position: center;
     background-size: cover;
@@ -384,6 +384,7 @@ img.home-beans {
     align-items: center;
     justify-content: center;
     gap: 2vw;
+    margin-top: 2vw;
 }
 
 .highlight {
@@ -466,7 +467,7 @@ img.home-beans {
 .sec-3 {
     width: 100%;
     height: 100%;
-    margin-top: 2vw;
+    margin-top: 5vw;
 }
 
 #heading {
@@ -477,7 +478,10 @@ img.home-beans {
     color: #36150B;
     padding: 0 2vw;
 }
-
+.sec-3 #heading{
+    text-align: left;
+    padding: 0 5vw;
+}
 .sec-3-container {
     display: flex;
     align-items: center;
@@ -508,22 +512,14 @@ img.home-beans {
 
 .right-sec-3 h1 {
     font-family: 'baloo';
-    font-size: 3vw;
+    font-size: 3.5vw;
 }
 
 .right-sec-3 p {
-    font-size: 1vw;
+    font-size: 1.1vw;
+    line-height: 1.5vw;
     color: #62382F;
     width: 80%;
-}
-
-hr {
-    position: relative;
-    width: 80%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    margin-top: 2vw;
 }
 
 /* section 4 */
@@ -536,10 +532,13 @@ hr {
 .product-container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem;
 }
-
+.sec-4 #heading{
+    text-align: left;
+}
 .product {
     width: 23rem;
     height: 25rem;
@@ -582,8 +581,8 @@ hr {
 .product svg {
     position: absolute;
     z-index: 9;
-    top: 0;
-    right: 0;
+    top: 1%;
+    right: 1%;
     padding: 1vw;
 }
 

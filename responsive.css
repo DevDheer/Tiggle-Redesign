@@ -1,25 +1,3 @@
-@media (max-width: 851px) {
-    .dropdown {
-        height: 30vw;
-    }
-
-    .menu-row {
-        padding: 0vw 2vw;
-        line-height: 2vw;
-    }
-
-    .menu-row li {
-        line-height: 3.2vw;
-        font-size: 1.3vw;
-        font-weight: 100;
-    }
-
-    #menu-heading {
-        font-size: 1.6vw;
-        font-weight: 500;
-    }
-}
-
 @media (max-width: 601px) {
     nav {
         padding: 2.5rem 1.5rem;
@@ -45,6 +23,21 @@
     #menu-heading {
         font-size: 1.6vw;
         font-weight: 500;
+    }
+
+    /* about best seller */
+    .right-sec-3 h1 {
+        font-size: 3.7vw;
+    }
+
+    .right-sec-3 p {
+        font-size: 1.3vw;
+        line-height: 1.9vw;
+    }
+
+    /* heading */
+    #heading {
+        font-size: 5vw;
     }
 }
 
@@ -106,6 +99,27 @@
         height: 40px;
         right: 0;
     }
+
+    .highlight {
+        width: 28%;
+        height: 30vw;
+        padding: 1vw 2vw;
+        border-radius: 15px;
+    }
+
+    .one-high,
+    .four-high {
+        width: 40vw;
+    }
+
+    .highlight-content h1 {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+
+    .highlight-content p {
+        font-size: 1.2vw;
+    }
 }
 
 @media (min-width: 701px) {
@@ -142,13 +156,12 @@
         height: 4.5vw;
         font-size: 1.2vw;
     }
+
     /* special */
     .sec-1 h1 {
         font-size: 5vw;
-        font-family: 'baloo';
-        color: #36150B;
     }
-    
+
     .sec-1 p {
         font-size: 1.1vw;
         width: 90%;
@@ -164,8 +177,7 @@
     .left-home {
         width: 100%;
         top: 0;
-        text-align: center;
-        align-items: center;
+        text-align: left;
     }
 
     .left-home h1 {
@@ -181,9 +193,11 @@
         width: 35%;
         top: -5%;
     }
-    img.home-beans{
+
+    img.home-beans {
         display: none;
     }
+
     .home-img {
         height: 20rem;
         top: -1vw;
@@ -191,6 +205,13 @@
     }
 
     .btn {
+        width: 11vw;
+        height: 5vw;
+        font-size: 1.3vw;
+        border-radius: 1vw;
+    }
+
+    .home-content .btn {
         width: 5rem;
         height: 2rem;
         font-size: 0.6rem;
@@ -200,28 +221,148 @@
     .cursor-follower {
         display: none;
     }
+
+    /* special */
+    .sec-1 {
+        height: 10rem;
+    }
+
+    .sec-1 h1 {
+        font-size: 6vw;
+    }
+
+    .sec-1 p {
+        font-size: 0.4rem;
+        width: 80%;
+    }
+
+    /* about best seller */
+    .sec-3-container {
+        flex-direction: column;
+    }
+
+    .sec-3 #heading {
+        text-align: center;
+    }
+
+    .right-sec-3,
+    .left-sec-3 {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-sec-3 {
+        left: 0;
+    }
+
+    .left-sec-3 img {
+        width: 65%;
+    }
+
+    .right-sec-3 h1 {
+        font-size: 6vw;
+    }
+
+    .right-sec-3 p {
+        font-size: 1.8vw;
+        line-height: 2.5vw;
+        width: 90%;
+    }
+
+    .right-sec-3 .btn {
+        width: 13vw;
+        height: 6vw;
+        font-size: 1.5vw;
+    }
 }
-@media (max-width: 419px){
-    .left-home h1{
+
+@media (max-width: 419px) {
+    .left-home h1 {
         font-size: 2.5rem;
         line-height: 2.5rem;
     }
+
     .home-img-text img {
         width: 4.5rem;
     }
-    .right-home{
+
+    .right-home {
         width: 45%;
     }
+
+    .sec-1 h1 {
+        font-size: 6vw;
+    }
+
+    .sec-1 p {
+        font-size: 0.4rem;
+        line-height: 0.6rem;
+        width: 90%;
+    }
+
+    /* highlights */
+
+    .highlight {
+        width: 30%;
+        height: 30vw;
+        border-radius: 7px;
+    }
+
+    .highlight-content {
+        transform: translateY(25vw);
+    }
 }
-@media (max-width: 346px){
-    .left-home h1{
+
+@media (max-width: 346px) {
+    .left-home h1 {
         font-size: 1.9rem;
         line-height: 1.9rem;
     }
+
     .home-img-text img {
         width: 4rem;
     }
-    .right-home{
+
+    .right-home {
         width: 65%;
+    }
+}
+
+@media (max-width: 1244px) {
+    .product {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .content {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1067px) {
+    
+    .product-container{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 551px){
+    .product {
+        width: 22rem;
+        height: 22rem;
+    }
+
+    .content {
+        font-size: 1rem;
+    }
+    .product svg{
+        
+    width: 15%;
+    height: 15%;
+    }
+    #heading{
+        font-size: 7vw;
     }
 }
