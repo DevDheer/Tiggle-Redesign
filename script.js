@@ -362,7 +362,7 @@ function scrolltrigger() {
         duration: 1
     });
     //our story scrolltrigger
-    gsap.from(".sec-6 #heading, .sec-6 #text, .bg-image-sec6", {
+    gsap.from(".sec-6 #heading, .sec-6 #text, .bg-image-sec6, .sec-6 .btn", {
         scrollTrigger: {
             trigger: ".sec-6",
             scrub: 1,
