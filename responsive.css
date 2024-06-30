@@ -1,9 +1,3 @@
-@media (max-width: 601px) {
-    nav {
-        padding: 2.5rem 1.5rem;
-    }
-}
-
 @media (max-width: 851px) {
     .dropdown {
         height: 30vw;
@@ -39,6 +33,36 @@
     #heading {
         font-size: 5vw;
     }
+
+    /* story */
+    .story {
+        width: 33vw;
+        height: 16vw;
+        padding: 2vw;
+        border-radius: 1.5vw;
+        font-size: 1.3vw;
+    }
+
+    .story p {
+        line-height: 1.8vw;
+    }
+
+    .story h2 {
+        font-size: 1.7vw;
+    }
+
+    #text {
+        line-height: 1.8vw;
+    }
+
+    /* as seen on */
+    .row-1 img {
+        height: 5vw;
+    }
+
+    .row-2 img {
+        height: 8vw;
+    }
 }
 
 @media (max-width: 701px) {
@@ -67,18 +91,28 @@
     .links.active {
         position: absolute;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         flex-direction: column;
         font-size: 2rem;
-        backdrop-filter: blur(10px);
+        padding: 0 5vw;
+        backdrop-filter: blur(5px);
         top: 0;
         right: 0;
         height: 100vh;
-        background-color: #513026aa;
-        color: #fff;
-        width: 100%;
+        background-color: #513026be;
+        width: 60%;
         z-index: 9999;
+    }
+
+    #nav-close {
+        position: absolute;
+        right: 10%;
+        top: 5%;
+    }
+
+    .cursor-follower {
+        display: none;
     }
 
     .links li::before {
@@ -119,6 +153,17 @@
 
     .highlight-content p {
         font-size: 1.2vw;
+    }
+    /* footer */
+    .footer-container{
+        flex-direction: column;
+        height: 90vh;
+    }
+    .footer{
+        height: 90vh;
+    }
+    .services, .followus{
+        margin-top: 2vw;
     }
 }
 
@@ -218,10 +263,6 @@
         border-radius: 5px;
     }
 
-    .cursor-follower {
-        display: none;
-    }
-
     /* special */
     .sec-1 {
         height: 10rem;
@@ -276,6 +317,28 @@
         height: 6vw;
         font-size: 1.5vw;
     }
+
+    nav {
+        padding: 2.5rem 1.5rem;
+    }
+
+    /* story */
+    .story-child-container {
+        flex-direction: column;
+    }
+
+    .story {
+        width: 15rem;
+    }
+
+    .story h2 {
+        font-size: 0.7rem;
+    }
+
+    .story p {
+        font-size: 0.4rem;
+        line-height: 0.5rem;
+    }
 }
 
 @media (max-width: 419px) {
@@ -315,6 +378,29 @@
     }
 }
 
+@media (max-width: 379px) {
+
+    /* story */
+    .story-child-container {
+        flex-direction: column;
+    }
+
+    .story {
+        width: 15rem;
+        height: 4rem;
+    }
+
+    .story h2 {
+        font-size: 0.6rem;
+    }
+
+    .story p {
+        font-size: 0.4rem;
+        line-height: 0.6rem;
+    }
+
+}
+
 @media (max-width: 346px) {
     .left-home h1 {
         font-size: 1.9rem;
@@ -342,13 +428,13 @@
 }
 
 @media (max-width: 1067px) {
-    
-    .product-container{
+
+    .product-container {
         justify-content: center;
     }
 }
 
-@media (max-width: 551px){
+@media (max-width: 551px) {
     .product {
         width: 22rem;
         height: 22rem;
@@ -357,12 +443,40 @@
     .content {
         font-size: 1rem;
     }
-    .product svg{
-        
-    width: 15%;
-    height: 15%;
+
+    .product svg {
+
+        width: 15%;
+        height: 15%;
     }
-    #heading{
+
+    #heading {
         font-size: 7vw;
+    }
+}
+
+@media (max-width: 951px) {
+    .footer-container {
+        width: 100%;
+        height: 30vw;
+    }
+
+    .footer h2 {
+        font-size: 2vw;
+    }
+
+    .footer li {
+        font-size: 1.4vw;
+        line-height: 2.5vw;
+    }
+
+    .insta img {
+        width: 28%;
+    }
+    img.insta-logo{
+        width: 6%;
+    }
+    .cpyrght {
+        font-size: 1.8vw;
     }
 }

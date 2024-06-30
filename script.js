@@ -95,13 +95,15 @@ function navresponsive() {
                 duration: 0.8,
             })
             navtl.from('.active li', {
-                y: 50,
+                x: 50,
                 opacity: 0,
-                stagger: 0.19,
-                duration: 0.6
+                stagger: 0.09,
+                duration: 0.6,
+                delay: -0.3,
             })
             navtl.from('#nav-close', {
-                opacity: 0
+                opacity: 0,
+                delay: -0.3
             })
         }
         else {
@@ -284,16 +286,28 @@ mousefollower();
 
 // gsap scroll trigger
 function scrolltrigger() {
-
-    gsap.to(".horizontal-container", {
-        xPercent: -80,
-        scrollTrigger: {
-            trigger: ".horizontal-container",
-            scrub: 1,
-            end: "+=3000",
-            pin: true
-        }
-    });
+    // const sections = gsap.utils.toArray(".horizon");
+    // const getMaxWidth = () => {
+    //     maxWidth = 0;
+    //     sections.forEach((section) => {
+    //       maxWidth += section.offsetWidth;
+    //     });
+    //   };
+      
+    //   getMaxWidth();
+      
+    //   ScrollTrigger.addEventListener("refreshInit", getMaxWidth);
+      
+    // gsap.to(".horizontal-container", {
+    //     x: "-500vw",
+    //     scrollTrigger: {
+    //         x: () => -(maxWidth - window.innerWidth),
+    //         trigger: ".horizontal-container",
+    //         scrub: 1,
+    //         end: "+=5000",
+    //         pin: true
+    //     }
+    // });
 
 
     // tiggle special scrolltrigger
@@ -302,7 +316,7 @@ function scrolltrigger() {
             trigger: ".sec-1",
             scrub: 1,
             start: 'top center',
-            end: "top 100%",
+            end: "top 100%", 
         },
         y: 30,
         opacity: 0,
@@ -315,7 +329,7 @@ function scrolltrigger() {
         scrollTrigger: {
             trigger: ".sec-2",
             scrub: 1,
-            start: 'top 30%',
+            start: 'top center',
             end: 'top 100%',
         },
         y: 30,
@@ -328,7 +342,7 @@ function scrolltrigger() {
         scrollTrigger: {
             trigger: ".sec-3",
             scrub: 1,
-            start: 'top 30%',
+            start: 'top center',
             end: 'top 100%',
         },
         y: 30,
@@ -341,7 +355,7 @@ function scrolltrigger() {
         scrollTrigger: {
             trigger: ".sec-4",
             scrub: 1,
-            start: 'top 30%',
+            start: 'top center',
             end: 'top 100%',
         },
         y: 30,
@@ -353,7 +367,7 @@ function scrolltrigger() {
         scrollTrigger: {
             trigger: ".sec-7",
             scrub: 1,
-            start: 'top 30%',
+            start: 'top center',
             end: 'top 100%',
         },
         y: 30,
@@ -366,7 +380,7 @@ function scrolltrigger() {
         scrollTrigger: {
             trigger: ".sec-6",
             scrub: 1,
-            start: 'top 30%',
+            start: 'top center',
             end: 'top bottom',
         },
         y: 40,
@@ -378,7 +392,7 @@ function scrolltrigger() {
         scrollTrigger: {
             trigger: ".sec-6",
             scrub: 1,
-            start: 'top 30%',
+            start: 'top center',
             end: 'top bottom',
         },
         x: -200,
@@ -390,7 +404,7 @@ function scrolltrigger() {
         scrollTrigger: {
             trigger: ".sec-6",
             scrub: 1,
-            start: 'top 30%',
+            start: 'top center',
             end: 'top bottom',
         },
         x: 200,

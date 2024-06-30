@@ -592,15 +592,18 @@ img.home-beans {
 }
 
 /*section 5 */
+.sec-5{
+    width: 500vw;
+}
 .horizontal-container {
-    width: 100%;
+    width: 500vw;
     height: 100vh;
     display: flex;
 }
 
 .horizon {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: #FFF6DD;
 }
@@ -681,13 +684,19 @@ h1.backwardnos {
 /* section 6 */
 .sec-6{
     width: 100%;
-    height: 50vw;
+    height: 100%;
     background-image: url(assets/tiggle-special-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2vw;
 }
+
 #text{
-    font-size: 1vw;
+    font-size: 1.2vw;
     margin-bottom: 3vw;
 }
+
 .bg-image-sec6{
     position: absolute;
     width: 100%;
@@ -696,9 +705,7 @@ h1.backwardnos {
     align-items: center;
     justify-content: center;
 }
-.bg-image-sec6 img{
-    height: 60vw;
-}
+
 .story-child-container{
     display: flex;
     align-items: center;
@@ -778,23 +785,12 @@ h1.backwardnos {
     margin-top: 2vw;
 }
 
-.footer hr {
-    margin-top: 0;
-}
-
 .footer-container {
     position: relative;
     width: 100%;
-    height: 50vh;
-    padding: 2vw;
+    height: 100%;
+    padding: 4vw;
     display: flex;
-}
-
-.onen2 {
-    width: 50%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
 }
 
 .footer h2 {
@@ -808,7 +804,7 @@ h1.backwardnos {
 }
 
 .followus {
-    width: 33%;
+    width: 100%;
 }
 
 .insta img {
@@ -817,13 +813,14 @@ h1.backwardnos {
 
 .footer-links,
 .services {
-    width: 33%;
+    width: 100%;
 }
 
 .cpyrght {
     width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     padding: 2vw;
 }
