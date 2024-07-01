@@ -23,7 +23,7 @@ function animatehomepage() {
         opacity: 0,
         delay: -0.9,
     })
-    hometl.from('.btn', {
+    hometl.from('.left-home .btn', {
         x: -50,
         duration: 0.4,
         opacity: 0,
@@ -41,7 +41,7 @@ function animatehomepage() {
         delay: -0.4,
     })
 }
-// animatehomepage()
+animatehomepage()
 // Navbar Dropdown
 function dropdown() {
     let droptl = gsap.timeline()
@@ -93,7 +93,7 @@ function navresponsive() {
     })
 
     navtl.to('.links li', {
-        transform: "translateX(0px)",
+        transform: "translate(0, 0)",
         stagger: 0.09,
         duration: 0.6,
         delay: -0.3,
@@ -104,7 +104,7 @@ function navresponsive() {
         opacity: 0,
         delay: -0.3
     })
-    
+
     navtl.pause()
     hamburger.addEventListener('click', () => {
         navtl.play()
@@ -386,3 +386,27 @@ function scrolltrigger() {
 scrolltrigger()
 
 ScrollTrigger.refresh();
+
+
+
+const marquee = document.querySelector(".heading-container")
+
+window.addEventListener('wheel', (dets) =>{
+    if(dets.deltaY > 0){
+        gsap.to('.marquee', {
+            transform: "translateX(-200%)",
+            duration: 3,
+            repeat: -1,
+            ease: "none",
+        })
+    }
+    else{
+        gsap.to('.marquee', {
+            transform: "translateX(0%)",
+            duration: 3,
+            repeat: -1,
+            ease: "none",
+        })
+    }
+})
+
