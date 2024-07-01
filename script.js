@@ -118,11 +118,11 @@ navresponsive();
 
 // cursor follower
 function mousefollower() {
-    const content = document.querySelectorAll('.left-home h1, .btn, .home-img, .home-beans')
-    const content2 = document.querySelectorAll(".links li")
     const cursor = document.querySelector(".cursor-follower")
+    const content = document.querySelectorAll('.left-home h1, .btn, .home-img, .home-beans, .marquee')
+    const content2 = document.querySelectorAll(".links li")
     const dropdown = document.querySelectorAll(".dropdown, #heading")
-    const cards = document.querySelectorAll('.highlight, .product, .left-sec-3 img, .sec-7 img')
+    const cards = document.querySelectorAll('.highlight, .product, .left-sec-3 img, .sec-7 img, .making')
 
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -387,7 +387,7 @@ scrolltrigger()
 
 ScrollTrigger.refresh();
 
-
+function marquee(){
 
 const marquee = document.querySelector(".heading-container")
 
@@ -395,7 +395,7 @@ window.addEventListener('wheel', (dets) =>{
     if(dets.deltaY > 0){
         gsap.to('.marquee', {
             transform: "translateX(-200%)",
-            duration: 3,
+            duration: 5,
             repeat: -1,
             ease: "none",
         })
@@ -403,10 +403,12 @@ window.addEventListener('wheel', (dets) =>{
     else{
         gsap.to('.marquee', {
             transform: "translateX(0%)",
-            duration: 3,
+            duration: 5,
             repeat: -1,
             ease: "none",
         })
     }
 })
 
+}
+marquee()
