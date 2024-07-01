@@ -5,10 +5,10 @@ function animatehomepage() {
         y: -100,
         duration: 0.5,
         opacity: 0,
-        delay: 1, 
+        delay: 0.3,
     })
     hometl.from('.nav-partition', {
-        opacity:0
+        opacity: 0
     })
     hometl.from(".links li, #nav-bag", {
         y: -40,
@@ -41,6 +41,7 @@ function animatehomepage() {
         delay: -0.4,
     })
 }
+// animatehomepage()
 // Navbar Dropdown
 function dropdown() {
     let droptl = gsap.timeline()
@@ -84,42 +85,34 @@ function navresponsive() {
     const hamburger = document.querySelector('#nav-open')
     const navclose = document.querySelector('#nav-close')
     const navcontent = document.querySelector('.links')
+    const navtl = gsap.timeline()
 
+    navtl.to('.links', {
+        right: '0',
+        duration: 0.8,
+    })
+
+    navtl.to('.links li', {
+        transform: "translateX(0px)",
+        stagger: 0.09,
+        duration: 0.6,
+        delay: -0.3,
+        opacity: 1,
+    })
+
+    navtl.from('#nav-close', {
+        opacity: 0,
+        delay: -0.3
+    })
+    
+    navtl.pause()
     hamburger.addEventListener('click', () => {
-        navcontent.classList.add('active');
-        if (navcontent.classList.contains('active')) {
-            const navtl = gsap.timeline()
-
-            navtl.from('.active', {
-                right: '-100vw',
-                duration: 0.8,
-            })
-            navtl.from('.active li', {
-                x: 50,
-                opacity: 0,
-                stagger: 0.09,
-                duration: 0.6,
-                delay: -0.3,
-            })
-            navtl.from('#nav-close', {
-                opacity: 0,
-                delay: -0.3
-            })
-        }
-        else {
-            console.log('there is no active class')
-        }
+        navtl.play()
     })
     navclose.addEventListener('click', () => {
-        navcontent.classList.remove('active')
-        if (navcontent.classList.contain('active')) {
-
-            console.log('there is active class')
-        }
-        else {
-        //    fsg
-        }
+        navtl.reverse()
     })
+
 };
 navresponsive();
 
@@ -286,29 +279,6 @@ mousefollower();
 
 // gsap scroll trigger
 function scrolltrigger() {
-    // const sections = gsap.utils.toArray(".horizon");
-    // const getMaxWidth = () => {
-    //     maxWidth = 0;
-    //     sections.forEach((section) => {
-    //       maxWidth += section.offsetWidth;
-    //     });
-    //   };
-      
-    //   getMaxWidth();
-      
-    //   ScrollTrigger.addEventListener("refreshInit", getMaxWidth);
-      
-    // gsap.to(".horizontal-container", {
-    //     x: "-500vw",
-    //     scrollTrigger: {
-    //         x: () => -(maxWidth - window.innerWidth),
-    //         trigger: ".horizontal-container",
-    //         scrub: 1,
-    //         end: "+=5000",
-    //         pin: true
-    //     }
-    // });
-
 
     // tiggle special scrolltrigger
     gsap.from(".sec-1 h1, .sec-1 p, .sec-1 .btn", {
@@ -316,7 +286,7 @@ function scrolltrigger() {
             trigger: ".sec-1",
             scrub: 1,
             start: 'top center',
-            end: "top 100%", 
+            end: "top 100%",
         },
         y: 30,
         opacity: 0,
@@ -387,7 +357,7 @@ function scrolltrigger() {
         opacity: 0,
         stagger: 0.2,
         duration: 9
-    }); 
+    });
     gsap.from(".one-story, .three-story", {
         scrollTrigger: {
             trigger: ".sec-6",
