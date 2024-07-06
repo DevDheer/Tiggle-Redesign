@@ -2,10 +2,6 @@
 function loader(){
     let loadertl = gsap.timeline()
 
-    loadertl.from('.bg-loader', {
-        height: "0%",
-    })
-
     loadertl.from('.loader h1 span', {
         y: 150,
         stagger: 0.09,
@@ -37,7 +33,6 @@ function animatehomepage() {
         y: -100,
         duration: 0.5,
         opacity: 0,
-        delay: 0.3,
     })
     hometl.from('.nav-partition', {
         opacity: 0
